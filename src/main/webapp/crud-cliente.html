@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+
+
+        <script src="js/cliente-service.js"></script>
+        <script src="js/cliente-controller.js"></script>
+        <script>
+            cc =  new ClienteController();
+        </script>
+
+    </head>
+    <body>
+        <form>
+                <input id="txtNome" placeholder="Nome"/>
+                <input id="txtEndereco" placeholder="Endereço"/>
+                <input id="txtCpf" placeholder="CPF"/>
+                <input id="txtRg" placeholder="RG"/>
+
+                <input type="button" value="Salvar" onclick="cc.aoClicarSalvar()"/>
+                <input type="button" value="Listar" onclick="cc.aoClicarListar()"/>
+                <input type="button" value="Cancelar" onclick="cc.aoClicarCancelar()"/>
+        </form>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>CPF</th>
+                    <th>RG</th>
+                    <th> - </th>
+                    <th> - </th>
+                </tr>
+            </thead>
+            <tbody id="tbClientes">
+                
+            </tbody>
+        </table>
+
+    </body>
+
+
+<script>
+      
+</script>
+   
+</html>
